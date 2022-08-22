@@ -1,0 +1,17 @@
+.canvas {
+  height: 20rem;
+  &__top-text {
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    top: 8rem;
+    left: 3rem;
+  }
+  &__bottom-text {
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    top: 10rem;
+    left: 3rem;
+  }
+}
