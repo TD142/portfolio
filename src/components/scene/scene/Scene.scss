@@ -1,17 +1,20 @@
 .canvas {
-  height: 20rem;
+  height: 100vh;
+
   &__top-text {
     font-size: 1.5rem;
     color: white;
+    font-weight: normal;
     position: absolute;
-    top: 8rem;
-    left: 3rem;
+    top: 10rem;
+    left: 2rem;
   }
   &__bottom-text {
     font-size: 1.5rem;
     color: white;
+    font-weight: normal;
     position: absolute;
-    top: 10rem;
-    left: 3rem;
+    top: 12rem;
+    left: 2rem;
   }
 }

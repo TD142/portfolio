@@ -3,7 +3,7 @@ import { Flex, Box } from "@react-three/flex";
 import { OrbitControls, Html } from "@react-three/drei";
 import { Suspense } from "react";
 import MainAnimation from "../main-animation/MainAnimation";
-import React from "react";
+
 import "./Scene.scss";
 
 const Scene = () => {
@@ -32,8 +32,8 @@ const Scene = () => {
           </Flex>
         </Suspense>
       </Canvas>
-      <p className="canvas__top-text">Thomas Daley</p>
-      <p className="canvas__bottom-text">Developer</p>
+      <h1 className="canvas__top-text">Thomas Daley</h1>
+      <h1 className="canvas__bottom-text">Developer</h1>
     </div>
   );
 };
