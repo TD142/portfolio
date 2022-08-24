@@ -12,6 +12,8 @@
   }
 
   &__inner-container {
+    width: 100%;
+    margin-bottom: 2rem;
     position: relative;
     &__image {
       border-top-right-radius: 20%;
@@ -23,9 +25,10 @@
 
     &:hover .portfolio__wrapper__text--description {
       margin-top: 0.5rem;
-      max-height: 5rem;
+      max-height: 7rem;
+      opacity: 1;
       visibility: visible;
-      transition: visibility 1s, max-height 1s, margin-top 1s;
+      transition: opacity 1s, max-height 1s, margin-top 1s;
     }
 
     &:hover .portfolio__wrapper__text--underline {
@@ -48,11 +51,12 @@
 
       &--underline {
         width: 0;
-        border-bottom: 1px solid grey;
+        border-bottom: 1px solid white;
       }
 
       &--description {
         visibility: hidden;
+        opacity: 0;
         max-height: 0;
       }
     }
