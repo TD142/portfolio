@@ -1,5 +1,8 @@
 .skills {
-  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
   &__header {
     font-weight: normal;
     width: fit-content;
@@ -20,6 +23,5 @@
   &__image {
     width: 100%;
     height: 3rem;
-    margin-right: 1rem;
   }
 }
