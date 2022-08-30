@@ -1,19 +1,31 @@
+@use "../../../styles/mixins" as *;
+
 .canvas {
   height: 100vh;
   &__top-text {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: white;
     font-weight: normal;
     position: absolute;
     top: 10rem;
     left: 2rem;
+    @include tablet {
+      font-size: 2.3rem;
+      left: 12%;
+      top: 14rem;
+    }
   }
   &__bottom-text {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: white;
     font-weight: normal;
     position: absolute;
-    top: 12rem;
+    top: 13rem;
     left: 2rem;
+    @include tablet {
+      font-size: 2.3rem;
+      left: 12%;
+      top: 18rem;
+    }
   }
 }

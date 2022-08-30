@@ -1,4 +1,5 @@
 @use "./resets" as *;
+@use "./mixins" as *;
 
 .fade-in-section {
   opacity: 0;

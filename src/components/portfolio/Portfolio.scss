@@ -1,3 +1,5 @@
+@use "../../styles/mixins" as *;
+
 .portfolio {
   padding: 1rem 0;
   display: flex;
@@ -6,19 +8,33 @@
 
   &__title {
     text-align: center;
+    margin: 2rem 0;
+    font-weight: normal;
+    text-decoration: underline;
+    @include tablet {
+      font-size: 1.5rem;
+    }
   }
   &__container {
     margin: 0 2rem;
   }
 
+  &__outer-container {
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
   &__inner-container {
-    width: 100%;
     margin-bottom: 2rem;
     position: relative;
     &__image {
       border-top-right-radius: 20%;
       border-bottom-left-radius: 20%;
       width: 100%;
+      height: 100%;
       display: block;
       margin: 0 auto;
     }
@@ -34,6 +50,14 @@
     &:hover .portfolio__wrapper__text--underline {
       width: 3.5rem;
       transition: width, 1s;
+    }
+
+    &--centre {
+      margin: 3rem auto;
+    }
+
+    @include tablet {
+      width: 48%;
     }
   }
 
