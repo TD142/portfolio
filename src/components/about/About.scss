@@ -7,14 +7,14 @@
   border-radius: 2px;
 
   &__text {
-    margin: 0 2rem 4rem 2rem;
-    background: lightseagreen;
+    // background: lightseagreen;
+    width: 60%;
+    color: black;
     padding: 1.5rem;
     border-radius: 5px;
+    margin-left: auto;
     @include tablet {
-      width: 50rem;
       height: fit-content;
-      margin: 2rem auto;
     }
   }
 
