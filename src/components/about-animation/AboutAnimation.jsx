@@ -2,7 +2,7 @@ import { MeshDistortMaterial } from "@react-three/drei";
 import { useFrame } from "react-three-fiber";
 import { useRef } from "react";
 
-const MainAnimation = () => {
+const AboutAnimation = () => {
   return (
     <mesh position={[0, 0, 0]} rotation={[0.5, 1, 0]}>
       <sphereGeometry args={[3, 60, 60]} />
@@ -16,4 +16,4 @@ const MainAnimation = () => {
   );
 };
 
-export default MainAnimation;
+export default AboutAnimation;

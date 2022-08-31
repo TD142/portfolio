@@ -5,13 +5,39 @@
   flex-direction: column;
   justify-content: center;
   height: 100vh;
+  background: linear-gradient(105deg, lightyellow 25%, black 25%);
+
+  &__outer-container {
+    @include tablet {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__container {
+    @include tablet {
+      width: 50%;
+    }
+  }
+
   &__header {
-    font-weight: normal;
     width: fit-content;
     margin: 2rem auto;
     text-decoration: underline;
     @include tablet {
       font-size: 1.5rem;
+    }
+  }
+
+  &__text {
+    margin: 0 2rem 4rem 2rem;
+    background: lightseagreen;
+    padding: 1.5rem;
+    border-radius: 5px;
+    @include tablet {
+      width: 12rem;
+      margin-bottom: 0;
     }
   }
 }
@@ -23,7 +49,11 @@
     & h4 {
       text-align: center;
       margin-top: 0.5rem;
+      @include tablet {
+        margin-bottom: 0;
+      }
     }
+    align-self: baseline;
   }
 
   &__image {

@@ -1,12 +1,20 @@
 import { Canvas } from "react-three-fiber";
 import { Flex, Box } from "@react-three/flex";
 import { OrbitControls, Html } from "@react-three/drei";
-import { Suspense } from "react";
+import { Suspense, useEffect, useState } from "react";
 import MainAnimation from "../main-animation/MainAnimation";
-
+import TextTransition, { presets } from "react-text-transition";
 import "./Scene.scss";
 
 const Scene = () => {
+  const [words, setWords] = useState(["Developer", "Creative"]);
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => setIndex((index) => index + 1), 3000);
+    return () => clearTimeout(intervalId);
+  }, []);
+
   return (
     <div className="canvas">
       <Canvas>
@@ -33,7 +41,11 @@ const Scene = () => {
         </Suspense>
       </Canvas>
       <h1 className="canvas__top-text">Thomas Daley</h1>
-      <h1 className="canvas__bottom-text">Developer</h1>
+      <h1 className="canvas__bottom-text">
+        <TextTransition springConfig={presets.wobbly}>
+          {words[index % words.length]}
+        </TextTransition>
+      </h1>
     </div>
   );
 };

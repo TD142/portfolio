@@ -3,9 +3,8 @@
 .contact {
   &__header {
     text-align: center;
-    font-weight: normal;
     @include tablet {
-      text-decoration: underline;
+      font-weight: normal;
       font-size: 1.5rem;
     }
   }

@@ -6,13 +6,15 @@
   flex-direction: column;
   justify-content: center;
 
-  &__title {
-    text-align: center;
-    margin: 2rem 0;
-    font-weight: normal;
-    text-decoration: underline;
+  &__text {
+    margin: 0 auto 4rem auto;
+    background: lightseagreen;
+    padding: 1.5rem;
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
     @include tablet {
-      font-size: 1.5rem;
+      margin: 4rem auto;
     }
   }
   &__container {
@@ -48,7 +50,7 @@
     }
 
     &:hover .portfolio__wrapper__text--underline {
-      width: 3.5rem;
+      width: 3.9rem;
       transition: width, 1s;
     }
 

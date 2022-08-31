@@ -1,5 +1,6 @@
 @use "./resets" as *;
 @use "./mixins" as *;
+@use "./typography" as *;
 
 .fade-in-section {
   opacity: 0;

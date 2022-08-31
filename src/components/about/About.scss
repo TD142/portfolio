@@ -1,0 +1,29 @@
+@use "../../styles/mixins" as *;
+
+.about {
+  padding: 2rem 0;
+  height: 100vh;
+  background: linear-gradient(105deg, black 25%, white 25%);
+  border-radius: 2px;
+
+  &__text {
+    margin: 0 2rem 4rem 2rem;
+    background: lightseagreen;
+    padding: 1.5rem;
+    border-radius: 5px;
+    @include tablet {
+      width: 50rem;
+      height: fit-content;
+      margin: 2rem auto;
+    }
+  }
+
+  &__animation {
+    height: 20rem;
+    @include tablet {
+      height: 30rem;
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
+}

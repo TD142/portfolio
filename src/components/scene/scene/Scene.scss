@@ -5,10 +5,10 @@
   &__top-text {
     font-size: 1.8rem;
     color: white;
-    font-weight: normal;
     position: absolute;
     top: 10rem;
     left: 2rem;
+    font-weight: 600;
     @include tablet {
       font-size: 2.3rem;
       left: 12%;
@@ -18,7 +18,7 @@
   &__bottom-text {
     font-size: 1.8rem;
     color: white;
-    font-weight: normal;
+    font-weight: 600;
     position: absolute;
     top: 13rem;
     left: 2rem;
