@@ -5,7 +5,6 @@
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  background: linear-gradient(105deg, lightyellow 25%, black 25%);
 
   &__outer-container {
     @include tablet {
@@ -31,13 +30,15 @@
   }
 
   &__text {
-    margin: 0 2rem 4rem 2rem;
-    background: lightseagreen;
-    padding: 1.5rem;
+    // margin: 0 2rem 4rem 2rem;
+    // background: lightseagreen;
+    // padding: 1.5rem;
+    width: fit-content;
+    margin: 0 auto 2rem;
     border-radius: 5px;
     @include tablet {
       width: 12rem;
-      margin-bottom: 0;
+      margin: 0;
     }
   }
 }
