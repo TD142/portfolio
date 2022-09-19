@@ -7,7 +7,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio">
       <FadeInSection>
-        <p className="portfolio__text">Checkout out some of my work below</p>
+        <p className="portfolio__text">Checkout some of my projects below</p>
         <div className="portfolio__container">
           <div className="portfolio__outer-container">
             <div className="portfolio__inner-container">

@@ -8,16 +8,23 @@ const About = () => {
   return (
     <div className="about">
       <FadeInSection>
-        <div className="about__container">
-          <p className="about__text">
-            Hi my name's Thomas, and I am a creative developer with a background
-            in music. My love and journey into web development started from my
-            passion for music - both fields use a complex source (music notation
-            / code) to present beautiful outputs, whether visually or audibly. I
-            believe it is my creativity which sets me apart in this field as my
-            whole life I have looked for new ways of doing things, whether it’s
-            through music, logical thinking or coding.
-          </p>
+        <div>
+          <div className="about__container">
+            <p className="about__text">
+              Hi my name's Thomas, and I am a creative developer with a
+              background in music.
+            </p>
+            <p className="about__text">
+              My love and journey into web development started from my passion
+              for music - both fields use a complex source (music notation /
+              code) to present beautiful outputs, whether visually or audibly.
+            </p>
+            <p className="about__text">
+              I believe it is my creativity which sets me apart in this field as
+              my whole life I have looked for new ways of doing things, whether
+              it’s through music, logical thinking or coding.
+            </p>
+          </div>
 
           <div className="about__animation">
             <Canvas>

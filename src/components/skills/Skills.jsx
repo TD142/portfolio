@@ -14,9 +14,12 @@ const Skills = () => {
     <div className="skills">
       <FadeInSection>
         <div className="skills__outer-container">
-          <p className="skills__text">
-            I have a diverse skill set and can work on a variety of projects
-          </p>
+          <div className="skills__inner-container">
+            <p className="skills__text">
+              I have a diverse skill set and can work on a variety of projects
+            </p>
+          </div>
+
           <div className="skills__container">
             <Marquee speed={40} gradient={false}>
               <div className="marquee__container">

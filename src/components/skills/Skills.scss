@@ -28,16 +28,24 @@
       font-size: 1.5rem;
     }
   }
-
+  &__inner-container {
+    width: fit-content;
+    margin: 0 auto 2rem;
+    @include tablet {
+      width: 12rem;
+      margin: 0;
+    }
+  }
   &__text {
+    margin: 1rem 1rem;
     // margin: 0 2rem 4rem 2rem;
     // background: lightseagreen;
     // padding: 1.5rem;
+    text-align: center;
     width: fit-content;
-    margin: 0 auto 2rem;
     border-radius: 5px;
+
     @include tablet {
-      width: 12rem;
       margin: 0;
     }
   }
