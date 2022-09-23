@@ -5,11 +5,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(150deg, white 25%, black 25%);
+  background: linear-gradient(150deg, rgba(79, 76, 76, 0.4) 25%, black 25%);
 
   &__text {
     // margin: 0 auto 4rem auto;
-    color: black;
+    color: white;
     padding: 2rem;
     border-radius: 5px;
     width: fit-content;
