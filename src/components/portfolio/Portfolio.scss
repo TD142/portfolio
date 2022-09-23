@@ -5,16 +5,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: linear-gradient(150deg, white 25%, black 25%);
 
   &__text {
-    margin: 0 auto 4rem auto;
-
-    padding: 1.5rem;
+    // margin: 0 auto 4rem auto;
+    color: black;
+    padding: 2rem;
     border-radius: 5px;
     width: fit-content;
     height: fit-content;
     @include tablet {
-      margin: 4rem auto;
+      // margin: 4rem auto;
     }
   }
   &__container {
@@ -32,6 +33,10 @@
   &__inner-container {
     margin-bottom: 2rem;
     position: relative;
+
+    &--overlay {
+    }
+
     &__image {
       border-top-right-radius: 20%;
       border-bottom-left-radius: 20%;
@@ -54,6 +59,11 @@
       transition: width, 1s;
     }
 
+    &:hover .portfolio__wrapper__text--wide-underline {
+      width: 6.9rem;
+      transition: width, 1s;
+    }
+
     &--centre {
       margin: 3rem auto;
     }
@@ -70,13 +80,29 @@
     position: absolute;
     z-index: 3;
     border-top-right-radius: 5px;
-    bottom: 1px;
+    bottom: 0px;
     background: rgba(255, 255, 255, 0.1);
+
+    // background: darkslategrey;
+    // background: black;
+    // background: light;
+
+    &--colour {
+      background: rgba(0, 0, 0, 0.5);
+    }
+
     &__text {
       margin: 0 0 0 1rem;
 
       &--underline {
         width: 0;
+        white-space: nowrap;
+        border-bottom: 1px solid white;
+      }
+
+      &--wide-underline {
+        width: 0;
+        white-space: nowrap;
         border-bottom: 1px solid white;
       }
 

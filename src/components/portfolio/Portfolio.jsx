@@ -2,12 +2,14 @@ import "./Portfolio.scss";
 import FadeInSection from "../fade-in/FadeIn";
 import OMEGA from "../../assets/images/wave-animation.png";
 import Brainflix from "../../assets/images/brainflix.png";
-import Bandsite from "../../assets/images/bandsite.png";
+import thoughtBank from "../../assets/images/thought-bank.png";
 const Portfolio = () => {
   return (
     <div className="portfolio">
       <FadeInSection>
-        <p className="portfolio__text">Checkout some of my projects below</p>
+        <p className="portfolio__text">
+          Take a look at selected pieces from my portfolio
+        </p>
         <div className="portfolio__container">
           <div className="portfolio__outer-container">
             <div className="portfolio__inner-container">
@@ -31,7 +33,7 @@ const Portfolio = () => {
                 </div>
               </a>
             </div>
-            <div className="portfolio__inner-container  ">
+            <div className="portfolio__inner-container portfolio__inner-container--overlay  ">
               <a
                 href="https://github.com/TD142/thomas-daley-brainflix"
                 target="_blank"
@@ -45,7 +47,7 @@ const Portfolio = () => {
                   <p className=" portfolio__wrapper__text portfolio__wrapper__text--underline">
                     Brainflix
                   </p>
-                  <p className="portfolio__wrapper__text portfolio__wrapper__text--description">
+                  <p className="portfolio__wrapper__text portfolio__wrapper__text--description ">
                     Video streaming platform. <br />
                     React | Node.js |
                   </p>
@@ -60,16 +62,16 @@ const Portfolio = () => {
             >
               <img
                 className="portfolio__inner-container__image"
-                src={Bandsite}
-                alt="Bandsite"
+                src={thoughtBank}
+                alt="thoughtbank"
               />
-              <div className="portfolio__wrapper">
-                <p className=" portfolio__wrapper__text portfolio__wrapper__text--underline">
-                  Bandsite
+              <div className="portfolio__wrapper portfolio__wrapper--colour">
+                <p className=" portfolio__wrapper__text  portfolio__wrapper__text--wide-underline">
+                  Thought Bank
                 </p>
-                <p className="portfolio__wrapper__text portfolio__wrapper__text--description">
-                  Band Website. <br />
-                  HTML | CSS | Javascript
+                <p className="portfolio__wrapper__text portfolio__wrapper__text--description ">
+                  MERN Art Blog. <br />
+                  React | Node.js | Three.js
                 </p>
               </div>
             </a>
