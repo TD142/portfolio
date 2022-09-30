@@ -3,11 +3,11 @@
 .about {
   padding: 2rem 0;
   height: 100vh;
-  background: linear-gradient(95deg, black 25%, white 25%);
+  background: linear-gradient(95deg, black 25%, rgba(79, 76, 76, 0.4) 25%);
   border-radius: 2px;
 
   @include tablet {
-    background: linear-gradient(105deg, black 25%, rgba(79, 76, 76, 0.4) 25%);
+    background: linear-gradient(105deg, black 25%, 25%);
   }
 
   &__container {
@@ -33,11 +33,11 @@
   }
 
   &__animation {
-    height: 25rem;
+    height: 20rem;
+    width: 80%;
+    margin: 0 auto;
     @include tablet {
       height: 30rem;
-      width: 80%;
-      margin: 0 auto;
     }
     @include desktop {
       height: 30rem;

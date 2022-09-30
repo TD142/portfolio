@@ -3,7 +3,7 @@ import FadeInSection from "../fade-in/FadeIn";
 import Marquee from "react-fast-marquee";
 import HTML from "../../assets/images/html.svg";
 import CSS from "../../assets/images/css.svg";
-import Javascript from "../../assets/images/javascript.svg";
+import Javascript from "../../assets/images/javascript.png";
 import React from "../../assets/images/react.svg";
 import Node from "../../assets/images/nodejs.svg";
 import Git from "../../assets/images/git.svg";
