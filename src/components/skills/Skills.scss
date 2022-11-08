@@ -4,8 +4,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  // background: rgba(79, 76, 76, 0.4);
   height: 100vh;
-
+  scroll-snap-align: start;
   &__outer-container {
     @include tablet {
       display: flex;

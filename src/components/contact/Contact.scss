@@ -1,10 +1,18 @@
 @use "../../styles/mixins" as *;
 
 .contact {
+  padding-top: 2rem;
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   &__header {
+    font-weight: 700;
     text-align: center;
     @include tablet {
-      font-weight: 600;
+      // font-weight: 600;
       font-size: 1.5rem;
     }
   }
@@ -20,4 +28,8 @@
       border-radius: 2rem;
     }
   }
+
+  // &__secondary-container {
+  //   flex: 1;
+  // }
 }

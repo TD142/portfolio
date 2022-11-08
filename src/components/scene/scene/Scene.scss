@@ -1,34 +1,81 @@
 @use "../../../styles/mixins" as *;
 
-.canvas {
+.scene {
   height: 100vh;
-  &__top-text {
-    -webkit-text-stroke: 2px;
-    font-size: 1.8rem;
+  scroll-snap-align: start;
+  // width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+
+  &__container {
+    // width: 100%;
     color: white;
+    // display: flex;
+    // flex-direction: column;
     position: absolute;
-    top: 10rem;
-    left: 2rem;
-    font-weight: 600;
+    // margin-left: auto;
+    // margin-right: auto;
+    left: 18%;
+    right: 0;
+    top: 40%;
+    // left: 20%;
     @include tablet {
-      font-size: 2.3rem;
-      left: 12%;
-      top: 14rem;
+      top: 45%;
+      left: 25%;
+    }
+    @include desktop {
+      top: 20%;
+      left: 10%;
+    }
+    &__top-text {
+      -webkit-text-stroke: 2px;
+      font-weight: 600;
+      font-size: 1.8rem;
+      @include tablet {
+        font-size: 3rem;
+      }
+      @include desktop {
+        font-size: 2.5rem;
+      }
+    }
+
+    &__bottom-text {
+      -webkit-text-stroke: 2px;
+      font-size: 1.8rem;
+      color: white;
+      font-weight: 600;
+      width: 9.018rem;
+      margin-left: 7.6rem;
+      // align-self: flex-end;
+      // position: relative;
+      // // left: 7.6rem;
+      // top: 3rem;
+
+      // align-self: flex-end;
+      // margin: 0 0 0 auto;
+      @include tablet {
+        font-size: 3rem;
+        margin-left: 12.6rem;
+      }
+      @include desktop {
+        margin-left: 0;
+        font-size: 2.5rem;
+      }
     }
   }
-  &__bottom-text {
-    -webkit-text-stroke: 2px;
-    font-size: 1.8rem;
-    color: white;
-    font-weight: 600;
-    position: absolute;
-    top: 13rem;
-    left: 2rem;
-    @include tablet {
-      font-size: 2.3rem;
-      left: 12%;
-      top: 18rem;
-    }
+}
+
+.canvas {
+  height: 50vh;
+  width: 20rem;
+  @include tablet {
+    height: 70vh;
+    width: 50rem;
+  }
+  @include desktop {
+    height: 100vh;
+    width: 65rem;
   }
 }
 

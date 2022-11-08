@@ -2,21 +2,18 @@ import { MeshDistortMaterial } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
 
 const MainAnimation = () => {
-  const isMobile = useMediaQuery({ query: "(max-width: 1279px)" });
-
-  const isDesktop = useMediaQuery({ query: "(min-width: 1280px)" });
+  const isMobileOrTablet = useMediaQuery({ query: "(max-width: 750px)" });
+  const isDesktop = useMediaQuery({ query: "(min-width: 750px)" });
   return (
     <mesh
-      position={isMobile ? [2, 3.5, 0] : isDesktop && [0, 0, 0]}
+      position={isMobileOrTablet ? [2.5, 3.5, 0] : [4, 3.5, 0]}
       rotation={[0.5, 1, 0]}
     >
-      <sphereGeometry
-        args={isMobile ? [1.8, 60, 60] : isDesktop && [2.5, 60, 60]}
-      />
+      <sphereGeometry args={isMobileOrTablet ? [2.3, 60, 60] : [2.7, 60, 60]} />
       <MeshDistortMaterial
         wireframe={true}
         color={"lightblue"}
-        distort={1.3}
+        distort={1.2}
         speed={0.9}
       />
     </mesh>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="44px" viewBox="0 0 23 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Inactive Left Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="0.02-Home-B" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-40.000000, -469.000000)" stroke-linecap="square">
+        <g id="Inactive-Left-Arrow" transform="translate(40.000000, 469.000000)">
+            <g id="Left-Arrow">
+                <g id="Group-2">
+                    <path d="M22.1785714,0.833333333 L1.62643514,21.6833267" id="Line" stroke="#222222"></path>
+                    <path d="M22.1785714,0.833333333 L1.62643514,21.6833267" id="Line" stroke="#879196"></path>
+                    <path d="M22.1785714,22.5 L1.62643514,43.3499933" id="Line" stroke="#222222" transform="translate(11.500000, 33.333333) scale(-1, 1) translate(-11.500000, -33.333333) "></path>
+                    <path d="M22.1785714,22.5 L1.62643514,43.3499933" id="Line" stroke="#879196" transform="translate(11.500000, 33.333333) scale(-1, 1) translate(-11.500000, -33.333333) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

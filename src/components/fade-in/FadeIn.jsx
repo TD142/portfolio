@@ -7,7 +7,6 @@ const FadeInSection = ({ children }) => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => entry.isIntersecting && setVisible(true));
     });
-
     observer.observe(fadeInRef.current);
     return () => observer.unobserve(fadeInRef.current);
   }, []);
