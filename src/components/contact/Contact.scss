@@ -9,9 +9,12 @@
   justify-content: center;
   align-items: center;
   &__header {
-    // margin-left: 2rem;
-    // position: sticky;
-    // top: 54.178px;
+    font-weight: 700;
+    text-align: center;
+    @include tablet {
+      // font-weight: 600;
+      font-size: 1.5rem;
+    }
   }
 
   &__container {
