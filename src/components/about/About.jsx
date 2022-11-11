@@ -9,7 +9,7 @@ const About = () => {
     <div className="about">
       {/* <FadeInSection> */}
       {/* <div className="about__wrapper"> */}
-      <h5 className="about__header">About</h5>
+      {/* <h5 className="about__header">About</h5> */}
       {/* </div> */}
 
       <div className="about__container">

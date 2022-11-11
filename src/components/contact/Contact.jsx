@@ -9,7 +9,7 @@ import { OrbitControls } from "@react-three/drei";
 const Contact = () => {
   return (
     <div className="contact">
-      <h3 className="contact__header">Contact</h3>
+      <h5 className="contact__header">Contact</h5>
       <div className="contact__container">
         <a href="mailto:thomaswilliamdaley@gmail.com" target="_blank">
           {/* <img src={email} alt="Email contact" /> */}

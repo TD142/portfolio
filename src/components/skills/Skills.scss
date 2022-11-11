@@ -1,40 +1,38 @@
 @use "../../styles/mixins" as *;
 
 .skills {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   // background: rgba(79, 76, 76, 0.4);
+  padding-top: 2rem;
   height: 100vh;
   scroll-snap-align: start;
+
   &__outer-container {
-    @include tablet {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+    height: 80%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__container {
+    width: 100%;
+
     @include tablet {
       width: 50%;
+      margin: 0 auto;
     }
   }
 
   &__header {
-    width: fit-content;
-    margin: 2rem auto;
+    margin: 0 2rem 2rem;
     text-decoration: underline;
-    @include tablet {
-      font-size: 1.5rem;
-    }
   }
   &__inner-container {
-    width: fit-content;
+    // width: fit-content;
     margin: 0 auto 2rem;
     @include tablet {
-      width: 12rem;
-      margin: 0;
+      // width: 12rem;
+      // margin: 0;
     }
   }
   &__text {
@@ -47,6 +45,8 @@
     border-radius: 5px;
 
     @include tablet {
+      width: 40rem;
+      margin: 2rem auto;
       margin: 0;
     }
   }
@@ -54,7 +54,7 @@
 
 .marquee {
   &__container {
-    width: 50%;
+    width: 100%;
 
     & h4 {
       text-align: center;

@@ -13,11 +13,12 @@ const Skills = () => {
   return (
     <div className="skills">
       {/* <FadeInSection> */}
+      {/* <h5 className="skills__header">Skills</h5> */}
       <div className="skills__outer-container">
         <div className="skills__inner-container">
           <p className="skills__text">
             I have a diverse skill set and can work on a variety of projects.
-            Checkout my portfolio below.
+            Checkout my portfolio in the next section.
           </p>
         </div>
 

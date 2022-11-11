@@ -26,6 +26,7 @@
   }
 
   &__header {
+    text-decoration: underline;
     margin-left: 2rem;
     // position: sticky;
     // top: 54.178px;
@@ -52,8 +53,8 @@
       width: 75%;
     }
     @include desktop {
-      height: 50%;
-      width: 55%;
+      height: 45%;
+      width: 50%;
     }
 
     // @media (min-width: 1500px) {

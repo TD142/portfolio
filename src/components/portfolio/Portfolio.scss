@@ -9,6 +9,11 @@
   // background: linear-gradient(150deg, rgba(79, 76, 76, 0.4) 25%, black 25%);
   // background: rgba(79, 76, 76, 0.4);
 
+  &__header {
+    text-decoration: underline;
+    margin-left: 2rem;
+  }
+
   &__text {
     // margin: 0 auto 4rem auto;
     color: white;

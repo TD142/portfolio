@@ -97,6 +97,7 @@ const Portfolio = () => {
   });
   return (
     <div className="portfolio">
+      {/* <h5 className="portfolio__header">Portfolio</h5> */}
       <div className="container">
         <img
           className="container__previous"
@@ -106,9 +107,6 @@ const Portfolio = () => {
           onClick={() => {
             if (intervalRef.current) {
               clearInterval(intervalRef.current);
-              // intervalRef.current = setInterval(() => {
-              //   nextItem();
-              // }, 4000);
             }
             previousItem();
           }}
@@ -160,9 +158,6 @@ const Portfolio = () => {
           onClick={() => {
             if (intervalRef.current) {
               clearInterval(intervalRef.current);
-              // intervalRef.current = setInterval(() => {
-              //   nextItem();
-              // }, 4000);
             }
             nextItem();
           }}
