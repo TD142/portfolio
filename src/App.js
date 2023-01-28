@@ -4,6 +4,7 @@ import Skills from "./components/skills/Skills";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import "./styles/global.scss";
+import { Suspense, useEffect, useState } from "react";
 
 function App() {
   return (

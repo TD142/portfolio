@@ -8,11 +8,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  & > img {
+    width: 50%;
+    max-width: 20rem;
+  }
+
   &__header {
     width: 15rem;
-    font-weight: 700;
+    font-weight: bold;
     text-align: center;
     font-size: 1rem;
+    margin-bottom: 0;
   }
 
   &__container {
