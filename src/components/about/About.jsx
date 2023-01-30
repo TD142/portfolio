@@ -13,6 +13,7 @@ const About = () => {
       {/* </div> */}
 
       <div className="about__container">
+        <h4>About</h4>
         <p className="about__text">
           Hi my name's Thomas, and I am a creative developer with a background
           in music.

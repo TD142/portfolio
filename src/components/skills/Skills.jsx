@@ -16,6 +16,7 @@ const Skills = () => {
       {/* <h5 className="skills__header">Skills</h5> */}
       <div className="skills__outer-container">
         <div className="skills__inner-container">
+          <h4>Skills</h4>
           <p className="skills__text">
             I have a diverse skill set and can work on a variety of projects.
             Checkout my portfolio in the next section.

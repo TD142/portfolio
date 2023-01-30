@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <div className="contact">
       <img src={contactImage} alt="contact logo" />
-      <h5 className="contact__header">Contact</h5>
+      <h4 className="contact__header">Contact</h4>
 
       <div className="contact__container">
         <a href="mailto:thomaswilliamdaley@gmail.com" target="_blank">

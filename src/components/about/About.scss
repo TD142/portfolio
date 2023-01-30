@@ -3,19 +3,23 @@
 .about {
   padding: 2rem 0;
   height: 100vh;
-  // background: linear-gradient(95deg, black 25%, rgba(79, 76, 76, 0.4) 25%);
   border-radius: 2px;
   scroll-snap-align: start;
   position: relative;
 
   @include tablet {
-    background: linear-gradient(105deg, black 25%, 25%);
+    display: flex;
+    align-items: center;
+    margin: 0 2rem;
+    max-width: 1200px;
+  }
+
+  @include desktop {
+    margin: 0 auto;
+    max-width: 1200px;
   }
 
   &__container {
-    // width: 68%;
-    // margin-left: auto;
-    // margin-bottom: 3rem;
     text-align: center;
     margin: 1rem;
 
@@ -28,13 +32,9 @@
   &__header {
     text-decoration: underline;
     margin-left: 2rem;
-    // position: sticky;
-    // top: 54.178px;
   }
 
   &__text {
-    // background: lightseagreen;
-
     margin-right: 1rem;
     border-radius: 5px;
     font-size: 1rem;
@@ -48,17 +48,18 @@
     height: 30%;
     width: 80%;
     margin: 0 auto;
+
+    @media (min-width: 600px) {
+      height: 50%;
+    }
+
     @include tablet {
       height: 60%;
-      width: 75%;
+      width: 45%;
     }
     @include desktop {
       height: 45%;
       width: 50%;
     }
-
-    // @media (min-width: 1500px) {
-    //   height: 32rem;
-    // }
   }
 }

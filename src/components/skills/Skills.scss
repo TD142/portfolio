@@ -6,12 +6,22 @@
   height: 100vh;
   scroll-snap-align: start;
 
+  @include desktop {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   &__outer-container {
     height: 80%;
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include tablet {
+      flex-direction: row;
+      margin: 0 2rem;
+    }
   }
 
   &__container {
@@ -28,11 +38,11 @@
     text-decoration: underline;
   }
   &__inner-container {
-    // width: fit-content;
+    & > h4 {
+      text-align: center;
+    }
     margin: 0 auto 2rem;
     @include tablet {
-      // width: 12rem;
-      // margin: 0;
     }
   }
   &__text {
@@ -45,9 +55,7 @@
     border-radius: 5px;
 
     @include tablet {
-      width: 40rem;
-      margin: 2rem auto;
-      margin: 0;
+      margin-left: 0;
     }
   }
 }

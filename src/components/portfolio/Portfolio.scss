@@ -6,16 +6,13 @@
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  // background: linear-gradient(150deg, rgba(79, 76, 76, 0.4) 25%, black 25%);
-  // background: rgba(79, 76, 76, 0.4);
 
   &__header {
-    text-decoration: underline;
-    margin-left: 2rem;
+    text-align: center;
+    margin: 1rem;
   }
 
   &__text {
-    // margin: 0 auto 4rem auto;
     color: white;
     padding: 2rem;
     border-radius: 5px;
@@ -158,7 +155,6 @@
   // }
 
   &__previous {
-    // transform: scaleX(-1);
     cursor: pointer;
     margin-left: 1rem;
   }
@@ -185,11 +181,9 @@
     margin-right: auto;
     left: 0;
     right: 0;
-    // text-align: center;
 
     &--hidden {
       opacity: 0;
-      // transition: opacity 1000ms;
     }
 
     &--fade {
@@ -202,7 +196,7 @@
       margin: 3rem 1rem 0;
       text-align: center;
       @include tablet {
-        margin: 0 auto;
+        margin: 1rem auto;
         width: 45rem;
       }
 

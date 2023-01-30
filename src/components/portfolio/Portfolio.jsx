@@ -97,7 +97,7 @@ const Portfolio = () => {
   });
   return (
     <div className="portfolio">
-      {/* <h5 className="portfolio__header">Portfolio</h5> */}
+      {/* <h4 className="portfolio__header">Portfolio</h4> */}
       <div className="container">
         <img
           className="container__previous"
@@ -164,7 +164,7 @@ const Portfolio = () => {
         />
       </div>
       <div className="indicator__container">
-        <div className="indicator"></div>
+        <div className="indicator indicator--active"></div>
         <div className="indicator"></div>
         <div className="indicator"></div>
       </div>
