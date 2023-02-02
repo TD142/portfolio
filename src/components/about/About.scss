@@ -9,6 +9,7 @@
 
   @include tablet {
     display: flex;
+    gap: 2rem;
     align-items: center;
     margin: 0 2rem;
     max-width: 1200px;
@@ -21,6 +22,8 @@
 
   &__container {
     text-align: center;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
     margin: 1rem;
 
     @include tablet {

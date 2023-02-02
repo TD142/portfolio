@@ -224,9 +224,6 @@
           width: 40rem;
           aspect-ratio: 2;
         }
-        @include desktop {
-          width: 45rem;
-        }
 
         @media (min-width: 1400px) {
           width: 60rem;
