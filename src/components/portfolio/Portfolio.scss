@@ -1,10 +1,14 @@
 @use "../../styles/mixins" as *;
 
 .portfolio {
+  padding: 1rem 0;
   scroll-snap-align: start;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   height: 100vh;
 
   &__header {
@@ -236,7 +240,7 @@
         }
 
         @media (min-width: 1400px) {
-          width: 50rem;
+          width: 45rem;
         }
       }
     }
