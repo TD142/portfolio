@@ -233,7 +233,7 @@
         }
 
         @media (min-width: 1400px) {
-          width: 60rem;
+          width: 50rem;
         }
       }
     }
@@ -255,5 +255,9 @@
     display: flex;
     gap: 1rem;
     margin: 0 auto;
+    position: relative;
+    @include desktop {
+      top: -25px;
+    }
   }
 }
