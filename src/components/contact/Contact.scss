@@ -9,11 +9,14 @@
   align-items: center;
 
   & > img {
-    width: 50%;
-    max-width: 20rem;
+    width: 80%;
     padding: 1rem 1rem 0 0;
     border-top: 1px solid white;
     border-right: 1px solid white;
+
+    @include tablet {
+      max-width: 20rem;
+    }
   }
 
   &__header {
