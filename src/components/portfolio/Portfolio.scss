@@ -140,7 +140,7 @@
   }
 
   @include desktop {
-    height: 40rem;
+    height: 35rem;
   }
 
   // @media (min-width: 1400px) {
@@ -262,5 +262,13 @@
     display: flex;
     gap: 1rem;
     margin: 0 auto;
+  }
+}
+
+a {
+  margin-bottom: 0;
+
+  & > p {
+    margin-bottom: 0;
   }
 }
