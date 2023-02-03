@@ -2,41 +2,20 @@
 
 .skills {
   // background: rgba(79, 76, 76, 0.4);
-  padding-top: 2rem;
-  height: 100vh;
-  scroll-snap-align: start;
-
-  @include desktop {
-    max-width: 1200px;
-    margin: 0 auto;
+  margin: 2rem 1rem;
+  @include tablet {
+    border-top: 1px solid white;
+    width: 50%;
   }
-
-  &__outer-container {
-    height: 80%;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    @include tablet {
-      gap: 2rem;
-      flex-direction: row;
-      margin: 0 2rem;
-    }
-  }
-
   &__container {
-    width: 100%;
-
-    @include tablet {
-      width: 50%;
-      margin: 0 auto;
+    margin-top: 1rem;
+    & > h4 {
+      text-align: center;
     }
   }
 
   &__header {
     margin: 0 2rem 2rem;
-    text-decoration: underline;
   }
   &__inner-container {
     border-top: 1px solid white;

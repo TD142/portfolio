@@ -97,7 +97,7 @@ const Portfolio = () => {
   });
   return (
     <div className="portfolio">
-      {/* <h4 className="portfolio__header">Portfolio</h4> */}
+      <h4 className="portfolio__header">Portfolio</h4>
       <div className="container">
         <img
           className="container__previous"
