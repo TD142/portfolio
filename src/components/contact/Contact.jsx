@@ -5,7 +5,7 @@ import email from "../../assets/images/email.png";
 import OceanAnimation from "../ocean-animation/OceanAnimation";
 import { Canvas } from "react-three-fiber";
 import { OrbitControls } from "@react-three/drei";
-import contactImage from "../../assets/images/beneath.jpeg";
+import contactImage from "../../assets/images/thomas_daley.jpg";
 
 const Contact = () => {
   return (
@@ -15,7 +15,6 @@ const Contact = () => {
 
       <div className="contact__container">
         <a href="mailto:thomaswilliamdaley@gmail.com" target="_blank">
-          {/* <img src={email} alt="Email contact" /> */}
           <p>Email</p>
         </a>
         <a
