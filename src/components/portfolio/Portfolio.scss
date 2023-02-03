@@ -10,11 +10,14 @@
   &__header {
     text-align: center;
     margin: 1rem;
-    border-bottom: 1px solid white;
-    padding-bottom: 1rem;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    padding-top: 1rem;
     width: 70%;
     margin: 1rem auto;
-
+    @include tablet {
+      margin-bottom: 0;
+    }
     @include desktop {
       width: 50%;
     }
@@ -255,9 +258,5 @@
     display: flex;
     gap: 1rem;
     margin: 0 auto;
-    position: relative;
-    @include desktop {
-      top: -25px;
-    }
   }
 }
