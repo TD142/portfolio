@@ -134,7 +134,7 @@
   justify-content: center;
   height: 35rem;
   @include tablet {
-    height: 32rem;
+    height: 35rem;
   }
 
   // @include desktop {
@@ -234,7 +234,7 @@
         object-fit: contain;
         @include tablet {
           max-width: none;
-          width: 40rem;
+          width: 38rem;
           aspect-ratio: 2;
         }
 
