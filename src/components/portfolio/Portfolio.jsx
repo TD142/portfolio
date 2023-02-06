@@ -123,9 +123,14 @@ const Portfolio = () => {
               animated nav, as well as a custom carousel which you are viewing
               now.
             </p>
-            <a href="https://github.com/TD142/thought-bank-client">
-              <p>Github</p>
-            </a>
+            <div className="carousel__item__links">
+              <a
+                href="https://github.com/TD142/thought-bank-client"
+                target="_blank"
+              >
+                <p>Code</p>
+              </a>
+            </div>
           </div>
           <div className="carousel__item carousel__item--hidden">
             <img src={OMEGA} alt="Omega main" />
@@ -134,9 +139,17 @@ const Portfolio = () => {
               Audio Api. The visuals react to the triggered clips, and these can
               be combined in an infinite number of different ways.
             </p>
-            <a href="https://github.com/TD142/thomas-daley-capstone-client">
-              <p>Github</p>
-            </a>
+            <div className="carousel__item__links">
+              <a
+                href="https://github.com/TD142/thomas-daley-capstone-client"
+                target="_blank"
+              >
+                <p>Code</p>
+              </a>
+              <a href="https://prayer-omega.vercel.app/" target="_blank">
+                <p>Site</p>
+              </a>
+            </div>
           </div>
           <div className="carousel__item carousel__item--hidden">
             <img src={Brainflix} alt="Brainflix Main" />
@@ -145,9 +158,18 @@ const Portfolio = () => {
               part of my web development diploma. Showcases API build and
               integration.
             </p>
-            <a href="https://github.com/TD142/thomas-daley-brainflix">
-              <p>Github</p>
-            </a>
+
+            <div className="carousel__item__links">
+              <a
+                href="https://github.com/TD142/thomas-daley-brainflix"
+                target="_blank"
+              >
+                <p>Code</p>
+              </a>
+              <a href="https://brainflix-eight.vercel.app/" target="_blank">
+                <p>Site</p>
+              </a>
+            </div>
           </div>
         </div>
         <img
