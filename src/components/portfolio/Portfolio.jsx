@@ -148,28 +148,6 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="carousel__item carousel__item--hidden">
-            <img src={STAPI} alt="STAPI screenshot" />
-            <p>
-              Pagination, search and error boundry exercise made with React
-              utilising the Star Trek API.
-            </p>
-            <div className="carousel__item__links">
-              <a
-                href="https://github.com/TD142/thomas-daley-strapi"
-                target="_blank"
-              >
-                <p>Code</p>
-              </a>
-
-              <a
-                href="https://github.com/TD142/thomas-daley-strapi"
-                target="_blank"
-              >
-                <p>Site</p>
-              </a>
-            </div>
-          </div>
-          <div className="carousel__item carousel__item--hidden">
             <img src={Goose} alt="Canada Goose website" />
             <p>
               Part of the winning team for a 24hr Hackathon challenge set by
@@ -186,14 +164,31 @@ const Portfolio = () => {
                 <p>Code</p>
               </a>
 
-              <a
-                href="https://sustainable-goose.surge.sh/sustainable"
-                target="_blank"
-              >
+              <a href="https://sustainable-goose.surge.sh/" target="_blank">
                 <p>Site</p>
               </a>
             </div>
           </div>
+          <div className="carousel__item carousel__item--hidden">
+            <img src={STAPI} alt="STAPI screenshot" />
+            <p>
+              Pagination, search and error boundry exercise made with React
+              utilising the Star Trek API.
+            </p>
+            <div className="carousel__item__links">
+              <a
+                href="https://github.com/TD142/thomas-daley-strapi"
+                target="_blank"
+              >
+                <p>Code</p>
+              </a>
+
+              <a href="https://thomas-daley-strapi.vercel.app/" target="_blank">
+                <p>Site</p>
+              </a>
+            </div>
+          </div>
+
           <div className="carousel__item carousel__item--hidden">
             <img
               src="https://static.dezeen.com/uploads/2020/03/chinese-brutalism-today-alberto-bologna-china-architecture-concrete_dezeen_1704_taizhou_hero-852x479.jpg"
