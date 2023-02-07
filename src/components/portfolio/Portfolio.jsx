@@ -1,7 +1,9 @@
 import "./Portfolio.scss";
 import OMEGA from "../../assets/images/wave-animation.png";
 import Brainflix from "../../assets/images/brainflix.png";
+import STAPI from "../../assets/images/Stapi.png";
 import changeItem from "../../assets/images/pngkey.com-stylish-arrow-png-8304891.svg";
+import Goose from "../../assets/images/canada-goose.jpeg";
 import { useRef, useEffect } from "react";
 import { useSwipeable } from "react-swipeable";
 
@@ -69,9 +71,6 @@ const Portfolio = () => {
     onSwipedLeft: () => {
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
-        // intervalRef.current = setInterval(() => {
-        //   nextItem();
-        // }, 6000);
       }
       nextItem();
     },
@@ -79,9 +78,6 @@ const Portfolio = () => {
     onSwipedRight: () => {
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
-        // intervalRef.current = setInterval(() => {
-        //   nextItem();
-        // }, 6000);
       }
       previousItem();
     },
@@ -113,26 +109,6 @@ const Portfolio = () => {
         />
         <div {...handlers} className="carousel">
           <div className="carousel__item">
-            <img
-              src="https://static.dezeen.com/uploads/2020/03/chinese-brutalism-today-alberto-bologna-china-architecture-concrete_dezeen_1704_taizhou_hero-852x479.jpg"
-              alt="Thoughtbank"
-            />
-            <p>
-              A MERN stack art blog in which the user can login and post blogs.
-              Showcases form validation, API build/integration, a custom
-              animated nav, as well as a custom carousel which you are viewing
-              now.
-            </p>
-            <div className="carousel__item__links">
-              <a
-                href="https://github.com/TD142/thought-bank-client"
-                target="_blank"
-              >
-                <p>Code</p>
-              </a>
-            </div>
-          </div>
-          <div className="carousel__item carousel__item--hidden">
             <img src={OMEGA} alt="Omega main" />
             <p>
               An audio visualiser built in React utilising Three.js and the Web
@@ -171,6 +147,73 @@ const Portfolio = () => {
               </a>
             </div>
           </div>
+          <div className="carousel__item carousel__item--hidden">
+            <img src={STAPI} alt="STAPI screenshot" />
+            <p>
+              Pagination, search and error boundry exercise made with React
+              utilising the Star Trek API.
+            </p>
+            <div className="carousel__item__links">
+              <a
+                href="https://github.com/TD142/thomas-daley-strapi"
+                target="_blank"
+              >
+                <p>Code</p>
+              </a>
+
+              <a
+                href="https://github.com/TD142/thomas-daley-strapi"
+                target="_blank"
+              >
+                <p>Site</p>
+              </a>
+            </div>
+          </div>
+          <div className="carousel__item carousel__item--hidden">
+            <img src={Goose} alt="Canada Goose website" />
+            <p>
+              Part of the winning team for a 24hr Hackathon challenge set by
+              Canada Goose during my web development program. The aim was to
+              highlight The company's drive to increase sustainability, which we
+              did by offering a rental model of their existing lines. The team
+              consisted of two developers and two UX designers.
+            </p>
+            <div className="carousel__item__links">
+              <a
+                href="https://github.com/James-Bosley/canada-goose-client"
+                target="_blank"
+              >
+                <p>Code</p>
+              </a>
+
+              <a
+                href="https://sustainable-goose.surge.sh/sustainable"
+                target="_blank"
+              >
+                <p>Site</p>
+              </a>
+            </div>
+          </div>
+          <div className="carousel__item carousel__item--hidden">
+            <img
+              src="https://static.dezeen.com/uploads/2020/03/chinese-brutalism-today-alberto-bologna-china-architecture-concrete_dezeen_1704_taizhou_hero-852x479.jpg"
+              alt="Thoughtbank"
+            />
+            <p>
+              A MERN stack art blog in which the user can login and post blogs.
+              Showcases form validation, API build/integration, a custom
+              animated nav, as well as a custom carousel which you are viewing
+              now.
+            </p>
+            <div className="carousel__item__links">
+              <a
+                href="https://github.com/TD142/thought-bank-client"
+                target="_blank"
+              >
+                <p>Code</p>
+              </a>
+            </div>
+          </div>
         </div>
         <img
           className="container__next"
@@ -187,6 +230,8 @@ const Portfolio = () => {
       </div>
       <div className="indicator__container">
         <div className="indicator indicator--active"></div>
+        <div className="indicator"></div>
+        <div className="indicator"></div>
         <div className="indicator"></div>
         <div className="indicator"></div>
       </div>
