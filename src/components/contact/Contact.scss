@@ -13,10 +13,7 @@
     padding: 1rem 1rem 0 0;
     border-top: 1px solid white;
     border-right: 1px solid white;
-
-    @include tablet {
-      max-width: 20rem;
-    }
+    max-width: 20rem;
   }
 
   &__header {
@@ -44,10 +41,6 @@
       text-align: right;
     }
   }
-
-  // &__secondary-container {
-  //   flex: 1;
-  // }
 
   & a {
     flex: 1;
