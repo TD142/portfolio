@@ -8,12 +8,11 @@ import React from "../../assets/images/react.svg";
 import Node from "../../assets/images/nodejs.svg";
 import Git from "../../assets/images/git.svg";
 import Three from "../../assets/images/Threejs-logo.svg";
+import Typescript from "../../assets/images/typescript.svg";
 
 const Skills = () => {
   return (
     <div className="skills">
-      {/* <FadeInSection> */}
-
       <div className="skills__container">
         <h4 className="skills__header">Skills</h4>
         <Marquee speed={40} gradient={false}>
@@ -28,6 +27,10 @@ const Skills = () => {
           <div className="marquee__container">
             <img className="marquee__image" src={Javascript} alt="Javascript" />
             <h4>Javascript</h4>
+          </div>
+          <div className="marquee__container">
+            <img className="marquee__image" src={Typescript} alt="Typescript" />
+            <h4>Typescript</h4>
           </div>
           <div className="marquee__container">
             <img className="marquee__image" src={React} alt="React" />
@@ -48,8 +51,6 @@ const Skills = () => {
           </div>
         </Marquee>
       </div>
-
-      {/* </FadeInSection> */}
     </div>
   );
 };

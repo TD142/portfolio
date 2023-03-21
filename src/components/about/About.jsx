@@ -4,11 +4,6 @@ import "./About.scss";
 const About = () => {
   return (
     <div className="about">
-      {/* <FadeInSection> */}
-      {/* <div className="about__wrapper"> */}
-      {/* <h5 className="about__header">About</h5> */}
-      {/* </div> */}
-
       <div className="about__container">
         <h4>About</h4>
         <p className="about__text">
@@ -27,18 +22,7 @@ const About = () => {
         </p>
       </div>
 
-      {/* <div className="about__animation">
-        <Canvas>
-          <OrbitControls enableZoom={false} />
-          <ambientLight intensity={0.5} />
-          <directionalLight position={[-2, 10, 2]} intensity={0.5} />
-          <AboutAnimation />
-        </Canvas>
-      </div> */}
-
       <Skills />
-
-      {/* </FadeInSection> */}
     </div>
   );
 };
