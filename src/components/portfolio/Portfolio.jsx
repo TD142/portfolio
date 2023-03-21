@@ -1,15 +1,13 @@
 import "./Portfolio.scss";
 import OMEGA from "../../assets/images/wave-animation.png";
 import Brainflix from "../../assets/images/brainflix.png";
-import STAPI from "../../assets/images/Stapi.png";
+import Bookmarks from "../../assets/images/Bookmarks.png";
 import changeItem from "../../assets/images/pngkey.com-stylish-arrow-png-8304891.svg";
 import Goose from "../../assets/images/canada-goose.jpeg";
 import { useRef, useEffect } from "react";
 import { useSwipeable } from "react-swipeable";
 
 const Portfolio = () => {
-  // carousel
-
   const intervalRef = useRef();
   let index = 0;
 
@@ -170,20 +168,19 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="carousel__item carousel__item--hidden">
-            <img src={STAPI} alt="STAPI screenshot" />
+            <img src={Bookmarks} alt="Bookmarks screenshot" />
             <p>
-              Pagination, search and error boundry exercise made with React
-              utilising the Star Trek API.
+              CRUD Bookmark app made with React And Typescript. The App
+              authenticates whether a URL is valid / exists, and features
+              add/edit/delete functionality, as well as data persistance
+              utilising local storage.
             </p>
             <div className="carousel__item__links">
-              <a
-                href="https://github.com/TD142/thomas-daley-strapi"
-                target="_blank"
-              >
+              <a href="https://github.com/TD142/Bookmarks" target="_blank">
                 <p>Code</p>
               </a>
 
-              <a href="https://thomas-daley-strapi.vercel.app/" target="_blank">
+              <a href="https://bookmarks-td.vercel.app" target="_blank">
                 <p>Site</p>
               </a>
             </div>
