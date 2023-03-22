@@ -146,6 +146,24 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="carousel__item carousel__item--hidden">
+            <img src={Bookmarks} alt="Bookmarks screenshot" />
+            <p>
+              CRUD Bookmark app made with React And Typescript. The App
+              authenticates whether a URL is valid / exists, and features
+              add/edit/delete functionality, as well as data persistance
+              utilising local storage.
+            </p>
+            <div className="carousel__item__links">
+              <a href="https://github.com/TD142/Bookmarks" target="_blank">
+                <p>Code</p>
+              </a>
+
+              <a href="https://bookmarks-td.vercel.app" target="_blank">
+                <p>Site</p>
+              </a>
+            </div>
+          </div>
+          <div className="carousel__item carousel__item--hidden">
             <img src={Goose} alt="Canada Goose website" />
             <p>
               Part of the winning team for a 24hr Hackathon challenge set by
@@ -163,24 +181,6 @@ const Portfolio = () => {
               </a>
 
               <a href="https://sustainable-goose.surge.sh/" target="_blank">
-                <p>Site</p>
-              </a>
-            </div>
-          </div>
-          <div className="carousel__item carousel__item--hidden">
-            <img src={Bookmarks} alt="Bookmarks screenshot" />
-            <p>
-              CRUD Bookmark app made with React And Typescript. The App
-              authenticates whether a URL is valid / exists, and features
-              add/edit/delete functionality, as well as data persistance
-              utilising local storage.
-            </p>
-            <div className="carousel__item__links">
-              <a href="https://github.com/TD142/Bookmarks" target="_blank">
-                <p>Code</p>
-              </a>
-
-              <a href="https://bookmarks-td.vercel.app" target="_blank">
                 <p>Site</p>
               </a>
             </div>

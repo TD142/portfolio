@@ -26,11 +26,11 @@ const Skills = () => {
           </div>
           <div className="marquee__container">
             <img className="marquee__image" src={Javascript} alt="Javascript" />
-            <h4>Javascript</h4>
+            <h4>JavaScript</h4>
           </div>
           <div className="marquee__container">
             <img className="marquee__image" src={Typescript} alt="Typescript" />
-            <h4>Typescript</h4>
+            <h4>TypeScript</h4>
           </div>
           <div className="marquee__container">
             <img className="marquee__image" src={React} alt="React" />
