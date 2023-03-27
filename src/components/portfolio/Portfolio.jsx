@@ -6,6 +6,7 @@ import changeItem from "../../assets/images/pngkey.com-stylish-arrow-png-8304891
 import Goose from "../../assets/images/canada-goose.jpeg";
 import { useRef, useEffect } from "react";
 import { useSwipeable } from "react-swipeable";
+import FadeInSection from "../fade-in/FadeIn";
 
 const Portfolio = () => {
   const intervalRef = useRef();
@@ -90,144 +91,146 @@ const Portfolio = () => {
     };
   });
   return (
-    <div className="portfolio">
-      <h4 className="portfolio__header">Portfolio</h4>
-      <div className="container">
-        <img
-          className="container__previous"
-          src={changeItem}
-          alt="carousel previous"
-          id="previous"
-          onClick={() => {
-            if (intervalRef.current) {
-              clearInterval(intervalRef.current);
-            }
-            previousItem();
-          }}
-        />
-        <div {...handlers} className="carousel">
-          <div className="carousel__item">
-            <img src={OMEGA} alt="Omega main" />
-            <p>
-              An audio visualiser built in React utilising Three.js and the Web
-              Audio Api. The visuals react to the triggered clips, and these can
-              be combined in an infinite number of different ways.
-            </p>
-            <div className="carousel__item__links">
-              <a
-                href="https://github.com/TD142/thomas-daley-capstone-client"
-                target="_blank"
-              >
-                <p>Code</p>
-              </a>
-              <a href="https://prayer-omega.vercel.app/" target="_blank">
-                <p>Site</p>
-              </a>
+    <FadeInSection>
+      <div className="portfolio">
+        <h4 className="portfolio__header">Portfolio</h4>
+        <div className="container">
+          <img
+            className="container__previous"
+            src={changeItem}
+            alt="carousel previous"
+            id="previous"
+            onClick={() => {
+              if (intervalRef.current) {
+                clearInterval(intervalRef.current);
+              }
+              previousItem();
+            }}
+          />
+          <div {...handlers} className="carousel">
+            <div className="carousel__item">
+              <img src={OMEGA} alt="Omega main" />
+              <p>
+                An audio visualiser built in React utilising Three.js and the
+                Web Audio Api. The visuals react to the triggered clips, and
+                these can be combined in an infinite number of different ways.
+              </p>
+              <div className="carousel__item__links">
+                <a
+                  href="https://github.com/TD142/thomas-daley-capstone-client"
+                  target="_blank"
+                >
+                  <p>Code</p>
+                </a>
+                <a href="https://prayer-omega.vercel.app/" target="_blank">
+                  <p>Site</p>
+                </a>
+              </div>
             </div>
-          </div>
-          <div className="carousel__item carousel__item--hidden">
-            <img src={Brainflix} alt="Brainflix Main" />
-            <p>
-              Full stack Streaming style website built in React and Express as
-              part of my web development diploma. Showcases API build and
-              integration.
-            </p>
+            <div className="carousel__item carousel__item--hidden">
+              <img src={Brainflix} alt="Brainflix Main" />
+              <p>
+                Full stack Streaming style website built in React and Express as
+                part of my web development diploma. Showcases API build and
+                integration.
+              </p>
 
-            <div className="carousel__item__links">
-              <a
-                href="https://github.com/TD142/thomas-daley-brainflix"
-                target="_blank"
-              >
-                <p>Code</p>
-              </a>
-              <a href="https://brainflix-eight.vercel.app/" target="_blank">
-                <p>Site</p>
-              </a>
+              <div className="carousel__item__links">
+                <a
+                  href="https://github.com/TD142/thomas-daley-brainflix"
+                  target="_blank"
+                >
+                  <p>Code</p>
+                </a>
+                <a href="https://brainflix-eight.vercel.app/" target="_blank">
+                  <p>Site</p>
+                </a>
+              </div>
             </div>
-          </div>
-          <div className="carousel__item carousel__item--hidden">
-            <img src={Bookmarks} alt="Bookmarks screenshot" />
-            <p>
-              CRUD Bookmark app made with React And Typescript. The App
-              authenticates whether a URL is valid / exists, and features
-              add/edit/delete functionality, as well as data persistance
-              utilising local storage.
-            </p>
-            <div className="carousel__item__links">
-              <a href="https://github.com/TD142/Bookmarks" target="_blank">
-                <p>Code</p>
-              </a>
+            <div className="carousel__item carousel__item--hidden">
+              <img src={Bookmarks} alt="Bookmarks screenshot" />
+              <p>
+                CRUD Bookmark app made with React And Typescript. The App
+                authenticates whether a URL is valid / exists, and features
+                add/edit/delete functionality, as well as data persistance
+                utilising local storage.
+              </p>
+              <div className="carousel__item__links">
+                <a href="https://github.com/TD142/Bookmarks" target="_blank">
+                  <p>Code</p>
+                </a>
 
-              <a href="https://bookmarks-td.vercel.app" target="_blank">
-                <p>Site</p>
-              </a>
+                <a href="https://bookmarks-td.vercel.app" target="_blank">
+                  <p>Site</p>
+                </a>
+              </div>
             </div>
-          </div>
-          <div className="carousel__item carousel__item--hidden">
-            <img src={Goose} alt="Canada Goose website" />
-            <p>
-              Part of the winning team for a 24hr Hackathon challenge set by
-              Canada Goose during my web development program. The aim was to
-              highlight The company's drive to increase sustainability, which we
-              did by offering a rental model of their existing lines. The team
-              consisted of two developers and two UX designers.
-            </p>
-            <div className="carousel__item__links">
-              <a
-                href="https://github.com/James-Bosley/canada-goose-client"
-                target="_blank"
-              >
-                <p>Code</p>
-              </a>
+            <div className="carousel__item carousel__item--hidden">
+              <img src={Goose} alt="Canada Goose website" />
+              <p>
+                Part of the winning team for a 24hr Hackathon challenge set by
+                Canada Goose during my web development program. The aim was to
+                highlight The company's drive to increase sustainability, which
+                we did by offering a rental model of their existing lines. The
+                team consisted of two developers and two UX designers.
+              </p>
+              <div className="carousel__item__links">
+                <a
+                  href="https://github.com/James-Bosley/canada-goose-client"
+                  target="_blank"
+                >
+                  <p>Code</p>
+                </a>
 
-              <a href="https://sustainable-goose.surge.sh/" target="_blank">
-                <p>Site</p>
-              </a>
+                <a href="https://sustainable-goose.surge.sh/" target="_blank">
+                  <p>Site</p>
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div className="carousel__item carousel__item--hidden">
-            <img
-              src="https://static.dezeen.com/uploads/2020/03/chinese-brutalism-today-alberto-bologna-china-architecture-concrete_dezeen_1704_taizhou_hero-852x479.jpg"
-              alt="Thoughtbank"
-            />
-            <p>
-              A MERN stack art blog in which the user can login and post blogs.
-              Showcases form validation, API build/integration, a custom
-              animated nav, as well as a custom carousel which you are viewing
-              now.
-            </p>
-            <div className="carousel__item__links">
-              <a
-                href="https://github.com/TD142/thought-bank-client"
-                target="_blank"
-              >
-                <p>Code</p>
-              </a>
+            <div className="carousel__item carousel__item--hidden">
+              <img
+                src="https://static.dezeen.com/uploads/2020/03/chinese-brutalism-today-alberto-bologna-china-architecture-concrete_dezeen_1704_taizhou_hero-852x479.jpg"
+                alt="Thoughtbank"
+              />
+              <p>
+                A MERN stack art blog in which the user can login and post
+                blogs. Showcases form validation, API build/integration, a
+                custom animated nav, as well as a custom carousel which you are
+                viewing now.
+              </p>
+              <div className="carousel__item__links">
+                <a
+                  href="https://github.com/TD142/thought-bank-client"
+                  target="_blank"
+                >
+                  <p>Code</p>
+                </a>
+              </div>
             </div>
           </div>
+          <img
+            className="container__next"
+            src={changeItem}
+            alt="carousel next"
+            id={"next"}
+            onClick={() => {
+              if (intervalRef.current) {
+                clearInterval(intervalRef.current);
+              }
+              nextItem();
+            }}
+          />
         </div>
-        <img
-          className="container__next"
-          src={changeItem}
-          alt="carousel next"
-          id={"next"}
-          onClick={() => {
-            if (intervalRef.current) {
-              clearInterval(intervalRef.current);
-            }
-            nextItem();
-          }}
-        />
+        <div className="indicator__container">
+          <div className="indicator indicator--active"></div>
+          <div className="indicator"></div>
+          <div className="indicator"></div>
+          <div className="indicator"></div>
+          <div className="indicator"></div>
+        </div>
       </div>
-      <div className="indicator__container">
-        <div className="indicator indicator--active"></div>
-        <div className="indicator"></div>
-        <div className="indicator"></div>
-        <div className="indicator"></div>
-        <div className="indicator"></div>
-      </div>
-    </div>
+    </FadeInSection>
   );
 };
 
