@@ -22,35 +22,33 @@ const Scene = () => {
   }, []);
 
   return (
-    <FadeInSection>
-      <div className="scene">
-        <div className="scene__container">
-          <h1 className="scene__container__top-text">Thomas Daley</h1>
-          <h1 className="scene__container__bottom-text">
-            <TextTransition springConfig={presets.wobbly}>
-              {words[index % words.length]}
-            </TextTransition>
-          </h1>
-        </div>
-
-        <div className="canvas">
-          <Canvas>
-            <OrbitControls enableZoom={false} />
-            <ambientLight intensity={0.5} />
-            <directionalLight position={[-2, 10, 2]} intensity={0.5} />
-            <Suspense
-              fallback={
-                <Html color="white" left>
-                  <p className="loading">Loading</p>
-                </Html>
-              }
-            >
-              <MainAnimation />
-            </Suspense>
-          </Canvas>
-        </div>
+    <div className="scene">
+      <div className="scene__container">
+        <h1 className="scene__container__top-text">Thomas Daley</h1>
+        <h1 className="scene__container__bottom-text">
+          <TextTransition springConfig={presets.wobbly}>
+            {words[index % words.length]}
+          </TextTransition>
+        </h1>
       </div>
-    </FadeInSection>
+
+      <div className="canvas">
+        <Canvas>
+          <OrbitControls enableZoom={false} />
+          <ambientLight intensity={0.5} />
+          <directionalLight position={[-2, 10, 2]} intensity={0.5} />
+          <Suspense
+            fallback={
+              <Html color="white" left>
+                <p className="loading">Loading</p>
+              </Html>
+            }
+          >
+            <MainAnimation />
+          </Suspense>
+        </Canvas>
+      </div>
+    </div>
   );
 };
 
