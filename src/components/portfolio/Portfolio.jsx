@@ -150,7 +150,7 @@ const Portfolio = () => {
             <div className="carousel__item carousel__item--hidden">
               <img src={Bookmarks} alt="Bookmarks screenshot" />
               <p>
-                CRUD Bookmark app made with React And Typescript. The App
+                CRUD Bookmark app made with React And TypeScript. The App
                 authenticates whether a URL is valid / exists, and features
                 add/edit/delete functionality, as well as data persistance
                 utilising local storage.
