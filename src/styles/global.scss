@@ -161,12 +161,9 @@
   }
 }
 .container {
-  padding: 1rem 0;
   margin-left: 1rem;
   border-left: 1px solid white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
   height: 100%;
 
   & > img {
@@ -203,9 +200,6 @@
   max-height: 0;
   overflow: hidden;
   &__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     & p {
       margin: 3rem 1rem 0;
       text-align: center;
@@ -252,12 +246,12 @@
           aspect-ratio: 2;
         }
 
-        // @include desktop {
-        //   width: 45rem;
-        // }
+        @include desktop {
+          width: 42rem;
+        }
 
-        @media (min-width: 1400px) {
-          width: 55rem;
+        @media (min-width: 1500px) {
+          width: 45rem;
         }
       }
     }
