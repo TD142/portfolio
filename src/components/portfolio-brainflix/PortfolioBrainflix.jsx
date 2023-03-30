@@ -12,8 +12,10 @@ const PortfolioSection = () => {
     <FadeInSection>
       <div className="portfolio">
         <div className="container">
+          <h4 className="portfolio__header"></h4>
           <div className="wrapper">
             <div className="wrapper__item ">
+              <h4>Brainflix</h4>
               <img src={Brainflix} alt="Brainflix Main" />
               <div>
                 <p>

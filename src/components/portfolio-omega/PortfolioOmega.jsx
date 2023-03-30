@@ -11,10 +11,11 @@ const PortfolioOmega = () => {
   return (
     <FadeInSection>
       <div className="portfolio">
-        <h4 className="portfolio__header">Portfolio</h4>
         <div className="container">
+          <h4 className="portfolio__header"></h4>
           <div className="wrapper">
             <div className="wrapper__item">
+              <h4>Omega</h4>
               <img
                 className="wrapper__item__img"
                 src={OMEGA}

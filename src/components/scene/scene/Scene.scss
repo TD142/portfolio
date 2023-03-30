@@ -9,6 +9,8 @@
   position: relative;
 
   &__container {
+    max-height: 0;
+    overflow: hidden;
     color: white;
     position: absolute;
     left: 18%;
@@ -26,6 +28,7 @@
       -webkit-text-stroke: 2px;
       font-weight: 600;
       font-size: 1.8rem;
+
       @include tablet {
         font-size: 3rem;
       }
@@ -55,8 +58,9 @@
 }
 
 .canvas {
+  opacity: 0;
   height: 50vh;
-  width: 20rem;
+
   @include tablet {
     height: 70vh;
     width: 50rem;
@@ -64,5 +68,19 @@
   @include desktop {
     height: 100vh;
     width: 65rem;
+  }
+}
+
+.is-visible {
+  & > .scene .scene__container {
+    max-height: 500px;
+
+    transition: max-height, 3s ease-in;
+    // transition: opacity, 3s ease-in;
+  }
+
+  & .canvas {
+    opacity: 1;
+    transition: opacity, 1.5s ease-in;
   }
 }

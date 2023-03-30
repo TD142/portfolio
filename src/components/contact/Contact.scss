@@ -1,6 +1,7 @@
 @use "../../styles/mixins" as *;
 
 .contact {
+  opacity: 0;
   height: 100vh;
   scroll-snap-align: start;
   display: flex;
@@ -44,5 +45,12 @@
 
   & a {
     flex: 1;
+  }
+}
+
+.is-visible {
+  & .contact {
+    opacity: 1;
+    transition: opacity 1s;
   }
 }
