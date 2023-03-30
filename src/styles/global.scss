@@ -163,7 +163,9 @@
 .container {
   margin-left: 1rem;
   border-left: 1px solid white;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 100%;
 
   & > img {
@@ -244,10 +246,6 @@
           max-width: none;
           width: 40rem;
           aspect-ratio: 2;
-        }
-
-        @include desktop {
-          width: 42rem;
         }
 
         @media (min-width: 1500px) {

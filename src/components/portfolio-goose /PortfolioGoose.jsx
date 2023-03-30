@@ -18,11 +18,9 @@ const PortfolioGoose = () => {
               <div>
                 <p>
                   Part of the winning team for a 24hr Hackathon challenge set by
-                  Canada Goose during my web development program. The aim was to
-                  highlight The company's drive to increase sustainability,
-                  which we did by offering a rental model of their existing
-                  lines. The team consisted of two developers and two UX
-                  designers.
+                  Canada Goose during my web development program. The goal - to
+                  help drive sustainability. Our team did this by offering a
+                  rental model.
                 </p>
                 <div className="wrapper__item__links">
                   <a
