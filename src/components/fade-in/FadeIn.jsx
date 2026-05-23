@@ -4,14 +4,15 @@ const FadeInSection = ({ children }) => {
   const [isVisible, setVisible] = useState(false);
   const fadeInRef = useRef();
   useEffect(() => {
+    const node = fadeInRef.current;
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => entry.isIntersecting && setVisible(true));
       },
       { threshold: "0.3" }
     );
-    observer.observe(fadeInRef.current);
-    return () => observer.unobserve(fadeInRef.current);
+    observer.observe(node);
+    return () => observer.unobserve(node);
   }, []);
   return (
     <div

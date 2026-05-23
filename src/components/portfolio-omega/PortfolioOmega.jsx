@@ -24,10 +24,15 @@ const PortfolioOmega = () => {
                   <a
                     href="https://github.com/TD142/thomas-daley-capstone-client"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <p>Code</p>
                   </a>
-                  <a href="https://prayer-omega.vercel.app/" target="_blank">
+                  <a
+                    href="https://prayer-omega.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <p>Site</p>
                   </a>
                 </div>

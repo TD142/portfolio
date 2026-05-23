@@ -3,7 +3,6 @@ import { useMediaQuery } from "react-responsive";
 
 const MainAnimation = () => {
   const isMobileOrTablet = useMediaQuery({ query: "(max-width: 750px)" });
-  const isDesktop = useMediaQuery({ query: "(min-width: 750px)" });
   return (
     <mesh
       position={isMobileOrTablet ? [2.5, 3.5, 0] : [4, 3.5, 0]}
