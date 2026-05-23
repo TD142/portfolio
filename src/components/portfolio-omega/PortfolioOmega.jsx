@@ -1,10 +1,4 @@
 import OMEGA from "../../assets/images/wave-animation.png";
-import Brainflix from "../../assets/images/brainflix.png";
-import Bookmarks from "../../assets/images/Bookmarks.png";
-import changeItem from "../../assets/images/pngkey.com-stylish-arrow-png-8304891.svg";
-import Goose from "../../assets/images/canada-goose.jpeg";
-import { useRef, useEffect } from "react";
-import { useSwipeable } from "react-swipeable";
 import FadeInSection from "../fade-in/FadeIn";
 
 const PortfolioOmega = () => {

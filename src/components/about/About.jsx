@@ -9,18 +9,15 @@ const About = () => {
         <div className="about__container">
           <h4>About</h4>
           <p className="about__text">
-            Hi my name's Thomas, and I am a creative developer with a background
-            in music.
+            Frontend-leaning full-stack engineer with 4+ years building
+            production apps in React, Angular, and .NET. I care about scalable
+            UI systems, clean APIs, and shipping features end-to-end.
           </p>
           <p className="about__text">
-            My love and journey into web development started from my passion for
-            music - both fields use a complex source (music notation / code) to
-            present beautiful outputs, whether visually or audibly.
-          </p>
-          <p className="about__text">
-            I believe it is my creativity which sets me apart in this field as
-            my whole life I have looked for new ways of doing things, whether
-            it’s through music, logical thinking or coding.
+            My background in music shaped how I work — both fields take a
+            structured source (notation, code) and turn it into something
+            people experience. That creative thread still runs through what I
+            build.
           </p>
         </div>
 

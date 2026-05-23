@@ -16,33 +16,25 @@
     max-width: 20rem;
   }
 
+  &__outer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
   &__header {
-    width: 15rem;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 0;
+    margin: 0 0 0.5rem;
   }
 
   &__container {
     display: flex;
-    width: 15rem;
+    gap: 2rem;
 
-    & img {
-      width: 3rem;
-
-      border-radius: 2rem;
+    & a > p {
+      margin: 0;
     }
-
-    & a:nth-of-type(2) > p {
-      text-align: center;
-    }
-
-    & a:nth-last-of-type(1) > p {
-      text-align: right;
-    }
-  }
-
-  & a {
-    flex: 1;
   }
 }

@@ -22,6 +22,9 @@ const Contact = () => {
             <a href="https://github.com/TD142" target="_blank">
               <p>Github</p>
             </a>
+            <a href="/Thomas_Daley_CV.pdf" target="_blank">
+              <p>CV</p>
+            </a>
           </div>
         </div>
       </div>
