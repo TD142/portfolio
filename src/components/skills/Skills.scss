@@ -2,7 +2,7 @@
 
 .skills {
   margin: 2rem 1rem;
-  @include tablet {
+  @include desktop {
     border-top: 1px solid white;
     width: 50%;
   }

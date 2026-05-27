@@ -7,15 +7,10 @@
   scroll-snap-align: start;
   position: relative;
 
-  @include tablet {
+  @include desktop {
     display: flex;
     gap: 2rem;
     align-items: center;
-    margin: 0 2rem;
-    max-width: 1200px;
-  }
-
-  @include desktop {
     margin: 0 auto;
     max-width: 1200px;
   }
